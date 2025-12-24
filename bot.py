@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify
 import threading
 
 # Bot configuration
-DISCORD_TOKEN = 'YOUR_BOT_TOKEN_HERE'
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 CHANNEL_ID = 1453218537735852186
 SERVER_INVITE = 'https://discord.gg/2jET66YxBH'
 
